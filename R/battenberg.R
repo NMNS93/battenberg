@@ -156,7 +156,12 @@ battenberg = function(analysis="paired", tumourname, normalname, tumour_data_fil
     logr_file = paste(tumourname, "_mutantLogR.tab", sep="")
     allelecounts_file = NULL
   }
-  print(chrom_names) 
+  
+  # Print chromosome names for WGS data type only
+  if (data_type=="wgs" | data_type=="WGS") {
+    print(paste0("Chromosomes to be processed: ", paste0(chrom_names, collapse = ", ")))
+  }
+
   for (sampleidx in 1:nsamples) {
     
     if (!skip_preprocessing[sampleidx]) {
