@@ -34,10 +34,12 @@ Imports:
   splines,
   GenomicRanges,
   VariantAnnotation,
-  copynumber,
+  bioc::copynumber,
   data.table
 URL: https://github.com/Wedge-Oxford/battenberg
 LazyLoad: yes
 Suggests:
     testthat
 RoxygenNote: 7.1.1
+Remotes: 
+    ASCAT=VanLoo-Lab/ascat/ASCAT@v2.5.3
