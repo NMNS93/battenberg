@@ -73,13 +73,12 @@ parse.imputeinfofile = function(imputeinfofile, is.male, chrom=NA) {
   }
   return(impute.info)
 }
-
 #' Check impute info file consistency
 #' @param imputeinfofile Path to the imputeinfofile on disk.
 #' @author sd11
-check.imputeinfofile = function(imputeinfofile, is.male, usebeagle) {
-  impute.info = parse.imputeinfofile(imputeinfofile, is.male)
-  if (usebeagle){
+check.imputeinfofile <- function(imputeinfofile, is.male, usebeagle) {
+  impute.info <- parse.imputeinfofile(imputeinfofile, is.male)
+  if (usebeagle) {
     if (any(!file.exists(impute.info$impute_legend))) {
       print("Could not find reference files, make sure paths in impute_info.txt point to the correct location")
       stop("Could not find reference files, make sure paths in impute_info.txt point to the correct location")
