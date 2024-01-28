@@ -43,3 +43,4 @@ Suggests:
 RoxygenNote: 7.1.1
 Remotes: 
     ASCAT=VanLoo-Lab/ascat/ASCAT@v2.5.3
+    copynumber=igordot/copynumber@b404a4d
