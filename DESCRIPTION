@@ -19,6 +19,7 @@ Depends:
   utils,
   graphics,
   grDevices
+biocViews:
 Imports:
   RColorBrewer,
   ASCAT (>= 2.5.1),
